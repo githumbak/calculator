@@ -1,0 +1,14 @@
+button{
+    padding: 50px;
+    background-color: rgba(38, 38, 202, 0.897);
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    max-height: 50px;
+    max-width: 50xp;
+    text-align: center;
+    
+}
+button:hover {
+	background: #8a123a;
+}
