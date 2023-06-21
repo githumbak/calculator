@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="calculator">
+        <button id="no7" value="7" class="numbers"> 7 </button>
+        <button id="no8" value="8" class="numbers"> 8 </button>
+        <button id="no9" value="9" class="numbers"> 9 </button>
+        <br/>
+        <button id="no4" value="4" class="numbers"> 4 </button>
+        <button id="no5" value="5" class="numbers"> 5 </button>
+        <button id="no6" value="6" class="numbers"> 6 </button>
+        <br/>
+        <button id="no1" value="1" class="numbers"> 1 </button>
+        <button id="no2" value="2" class="numbers"> 2 </button>
+        <button id="no3" value="3" class="numbers"> 3 </button>
+        <br/>
+        <button id="plusMinus" value="y" class="numbers"> +/- </button>
+        <button id="no0" value="0" class="numbers"> 0 </button>
+    </section>
+</body>
+</html>
