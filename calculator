@@ -5,34 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
 </head>
 <body>
-    <section id="calculator">
-    <button id="no7" value="7" class="numbers"> 7 </button>
-    <button id="no8" value="8" class="numbers"> 8 </button>
-    <button id="no9" value="9" class="numbers"> 9 </button>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        
-        <button id="no4" value="4" class="numbers"> 4 </button>
-        <button id="no5" value="5" class="numbers"> 5 </button>
-        <button id="no6" value="6" class="numbers"> 6 </button>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <button id="no1" value="1" class="numbers"> 1 </button>
-        <button id="no2" value="2" class="numbers"> 2 </button>
-        <button id="no3" value="3" class="numbers"> 3 </button>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <button id="plusMinus" value="y" class="numbers"> +/- </button>
-        <button id="no0" value="0" class="numbers"> 0 </button>
-        <button id="comma" value="," class="numbers"> , </button>
-    </section>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="clicked" class="ok" disabled></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td><input type="button" value="c" onclick="clearr()" /> </td>
+        </tr>
+        <tr>
+            <td><input value="7" type="button" onclick="writeOut('7')"></td>
+            <td><input value="8" type="button" onclick="writeOut('8')"></td>
+            <td><input value="9" type="button" onclick="writeOut('9')"></td>
+            <td><input value="/" type="button" onclick="writeOut('/')"></td>
+        </tr>
+        <tr>
+            <td><input value="4" type="button" onclick="writeOut('4')"></td>
+            <td><input value="5" type="button" onclick="writeOut('5')"></td>
+            <td><input value="6" type="button" onclick="writeOut('6')"></td>
+            <td><input value="*" type="button" onclick="writeOut('*')"></td>
+        </tr>
+        <tr>
+            <td><input value="1" type="button" onclick="writeOut('1')"></td>
+            <td><input value="2" type="button" onclick="writeOut('2')"></td>
+            <td><input value="3" type="button" onclick="writeOut('3')"></td>
+            <td><input value="-" type="button" onclick="writeOut('-')"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><input value="0" type="button" onclick="writeOut('0')"></td>
+            <td><input value="+" type="button" onclick="writeOut('+')"></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td><input value="=" type="button" onclick="counting()"></td>
+        </tr>
+    </table>
+    
 </body>
 </html>
