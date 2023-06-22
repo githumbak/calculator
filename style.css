@@ -2,20 +2,27 @@ table{
   border: 1px solid rgba(22, 117, 22, 0.946);
   margin: auto;
   background-color: rgba(184, 19, 221, 0.898);
-  height: 800px;
-  width: 600px;
+  height: 400px;
+  width: 300px;
 
 }
 input{
   background-color: rgb(76, 11, 141);
   color: white;
-  height: 200px;
-  width: 200px;
-  font-size: 75px;
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
 }
 input[type=text]{
-  width: 800px;
+  width: 400px;
   background-color: rgb(249, 192, 106);
   border: 10px solid rgba(196, 7, 108, 0.871);
-  font-size: 75px;
+  font-size: 37 px;
+}
+input[id=clicked2]{
+  width: 400px;
+  background-color: rgb(211, 132, 13);
+  border: 10px solid rgba(178, 6, 98, 0.871);
+  font-size: 37 px;
+  height: 75px;
 }
