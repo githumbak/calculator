@@ -10,38 +10,41 @@
 <body>
     <table>
         <tr>
-            <td colspan="4"><input type="text" id="clicked" class="ok" disabled></td>
+            <td colspan="4"><input type="text" id="clicked1" disabled></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" id="clicked2" disabled></td>
         </tr>
         <tr>
             <td colspan="3"></td>
             <td><input type="button" value="c" onclick="clearr()" /> </td>
         </tr>
         <tr>
-            <td><input value="7" type="button" onclick="writeOut('7')"></td>
-            <td><input value="8" type="button" onclick="writeOut('8')"></td>
-            <td><input value="9" type="button" onclick="writeOut('9')"></td>
-            <td><input value="/" type="button" onclick="writeOut('/')"></td>
+            <td><input value="7" type="button" onclick="writeOut('7')" class="numbers"></td>
+            <td><input value="8" type="button" onclick="writeOut('8')" class="numbers"></td>
+            <td><input value="9" type="button" onclick="writeOut('9')" class="numbers"></td>
+            <td><input value="/" type="button" onclick="writeOut('/')" class="action" id="division"></td>
         </tr>
         <tr>
-            <td><input value="4" type="button" onclick="writeOut('4')"></td>
-            <td><input value="5" type="button" onclick="writeOut('5')"></td>
-            <td><input value="6" type="button" onclick="writeOut('6')"></td>
-            <td><input value="*" type="button" onclick="writeOut('*')"></td>
+            <td><input value="4" type="button" onclick="writeOut('4')" class="numbers"></td>
+            <td><input value="5" type="button" onclick="writeOut('5')" class="numbers"></td>
+            <td><input value="6" type="button" onclick="writeOut('6')" class="numbers"></td>
+            <td><input value="*" type="button" onclick="writeOut('*')" class="action" id="multiplication"></td>
         </tr>
         <tr>
-            <td><input value="1" type="button" onclick="writeOut('1')"></td>
-            <td><input value="2" type="button" onclick="writeOut('2')"></td>
-            <td><input value="3" type="button" onclick="writeOut('3')"></td>
-            <td><input value="-" type="button" onclick="writeOut('-')"></td>
+            <td><input value="1" type="button" onclick="writeOut('1')" class="numbers"></td>
+            <td><input value="2" type="button" onclick="writeOut('2')" class="numbers"></td>
+            <td><input value="3" type="button" onclick="writeOut('3')" class="numbers"></td>
+            <td><input value="-" type="button" onclick="writeOut('-')" class="action" id="subtraction"></td>
         </tr>
         <tr>
             <td></td>
-            <td colspan="2"><input value="0" type="button" onclick="writeOut('0')"></td>
-            <td><input value="+" type="button" onclick="writeOut('+')"></td>
+            <td colspan="2"><input value="0" type="button" onclick="writeOut('0')" class="numbers"></td>
+            <td><input value="+" type="button" onclick="writeOut('+')" class="action" id="addition"></td>
         </tr>
         <tr>
             <td colspan="3"></td>
-            <td><input value="=" type="button" onclick="counting()"></td>
+            <td><input value="=" type="button" onclick="calculation()"></td>
         </tr>
     </table>
     
