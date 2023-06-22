@@ -1,14 +1,21 @@
-button{
-    padding: 50px;
-    background-color: rgba(38, 38, 202, 0.897);
-    color: white;
-    font-size: xx-large;
-    font-weight: bold;
-    max-height: 50px;
-    max-width: 50xp;
-    text-align: center;
-    
+table{
+  border: 1px solid rgba(22, 117, 22, 0.946);
+  margin: auto;
+  background-color: rgba(184, 19, 221, 0.898);
+  height: 800px;
+  width: 600px;
+
 }
-button:hover {
-	background: #8a123a;
+input{
+  background-color: rgb(76, 11, 141);
+  color: white;
+  height: 200px;
+  width: 200px;
+  font-size: 75px;
+}
+input[type=text]{
+  width: 800px;
+  background-color: rgb(249, 192, 106);
+  border: 10px solid rgba(196, 7, 108, 0.871);
+  font-size: 75px;
 }
