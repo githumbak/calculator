@@ -2,11 +2,23 @@ function writeOut(value){ // funkcja wypisywania
     document.getElementById("clicked1").value+=value
 }
 
-let first=0
-let second=0
-let firstOperation
+var first=0
+var second=0
+var firstOperation
 
-function writeOutSign(value){ 
+function writeOutSign1(value){ 
+    if(first==0){
+        first=document.getElementById("clicked1").value
+        firstOperation="/"
+        document.getElementById("clicked1").value+=value
+    }
+    else{
+        second=document.getElementById("clicked1").value
+        document.getElementById("clicked1").value+=value
+    }
+}
+
+function writeOutSign2(value){ 
     if(first==0){
         first=document.getElementById("clicked1").value
         firstOperation
@@ -18,7 +30,7 @@ function writeOutSign(value){
     }
 }
 
-function writeOutSign(value){ 
+function writeOutSign3(value){ 
     if(first==0){
         first=document.getElementById("clicked1").value
         firstOperation
@@ -30,19 +42,7 @@ function writeOutSign(value){
     }
 }
 
-function writeOutSign(value){ 
-    if(first==0){
-        first=document.getElementById("clicked1").value
-        firstOperation
-        document.getElementById("clicked1").value+=value
-    }
-    else{
-        second=document.getElementById("clicked1").value
-        document.getElementById("clicked1").value+=value
-    }
-}
-
-function writeOutSign(value){ 
+function writeOutSign4(value){ 
     if(first==0){
         first=document.getElementById("clicked1").value
         firstOperation
@@ -62,13 +62,13 @@ function clearr() { // funkcja czyszczenia
 }
 function calculation(){
 
-    let x=document.getElementById("clicked1").value
-    let divisionSign=document.getElementById("division").value // dzielenie
-    let multiplicationSign=document.getElementById("multiplication").value // mnożenie
-    let subtractionSign=document.getElementById("subtraction").value // odejmowanie
-    let additionSign=document.getElementById("addition").value // dodawanie
+    var x=document.getElementById("clicked1").value
+    var divisionSign=document.getElementById("division").value // dzielenie
+    var multiplicationSign=document.getElementById("multiplication").value // mnożenie
+    var subtractionSign=document.getElementById("subtraction").value // odejmowanie
+    var additionSign=document.getElementById("addition").value // dodawanie
     
-    let result;
+    var result;
     
 
   switch(x) {
