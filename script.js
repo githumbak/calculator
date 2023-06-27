@@ -1,24 +1,75 @@
-function writeOut(value){
+function writeOut(value){ // funkcja wypisywania
     document.getElementById("clicked1").value+=value
 }
 
-function clearr() {
+let first=0
+let second=0
+let firstOperation
+
+function writeOutSign(value){ 
+    if(first==0){
+        first=document.getElementById("clicked1").value
+        firstOperation
+        document.getElementById("clicked1").value+=value
+    }
+    else{
+        second=document.getElementById("clicked1").value
+        document.getElementById("clicked1").value+=value
+    }
+}
+
+function writeOutSign(value){ 
+    if(first==0){
+        first=document.getElementById("clicked1").value
+        firstOperation
+        document.getElementById("clicked1").value+=value
+    }
+    else{
+        second=document.getElementById("clicked1").value
+        document.getElementById("clicked1").value+=value
+    }
+}
+
+function writeOutSign(value){ 
+    if(first==0){
+        first=document.getElementById("clicked1").value
+        firstOperation
+        document.getElementById("clicked1").value+=value
+    }
+    else{
+        second=document.getElementById("clicked1").value
+        document.getElementById("clicked1").value+=value
+    }
+}
+
+function writeOutSign(value){ 
+    if(first==0){
+        first=document.getElementById("clicked1").value
+        firstOperation
+        document.getElementById("clicked1").value+=value
+    }
+    else{
+        second=document.getElementById("clicked1").value
+        document.getElementById("clicked1").value+=value
+    }
+}
+
+
+function clearr() { // funkcja czyszczenia
     document.getElementById("clicked1").value = ""
     document.getElementById("clicked2").value = ""
+    first=0;
 }
 function calculation(){
 
     let x=document.getElementById("clicked1").value
-    x = parseFloat(x);
-    let divisionSign=document.getElementById("division").value
-    let multiplicationSign=document.getElementById("multiplication").value
-    let subtractionSign=document.getElementById("subtraction").value
-    let additionSign=document.getElementById("addition").value
-    
-    document.getElementById("clicked1").value=x
-    document.getElementById("clicked2").value=x
+    let divisionSign=document.getElementById("division").value // dzielenie
+    let multiplicationSign=document.getElementById("multiplication").value // mnożenie
+    let subtractionSign=document.getElementById("subtraction").value // odejmowanie
+    let additionSign=document.getElementById("addition").value // dodawanie
     
     let result;
+    
 
   switch(x) {
     case x+divisionSign||divisionSign+x:
@@ -34,8 +85,9 @@ function calculation(){
         result = parseFloat(x)+parseFloat(x)
     break;
     default:
-        result = parseFloat(x)
+        result = first
   }
-  document.getElementById("clicked2").value = result;
+  
   document.getElementById("clicked1").value = "";
+  document.getElementById("clicked2").value = result;
 }
